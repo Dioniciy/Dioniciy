@@ -1,0 +1,29 @@
+.products{
+  // .products__inner
+  &__inner {
+    display: grid;
+    gap: 2.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.6rem;
+    }
+
+    @media screen and (max-width: 720px) {
+      grid-template-columns: 100%;
+    }
+
+  }
+  // .products__search-res
+  &__search-res {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.8rem;
+    p {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      color: #2C2C2C;
+    }
+  }
+}

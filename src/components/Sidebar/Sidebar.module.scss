@@ -1,0 +1,46 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
+
+  h3 {
+    color: #2C2C2C;
+    margin-bottom: 2rem;
+  }
+
+  // .sidebar__form
+  &__form {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 3.2rem 4.4rem;
+    margin-bottom: 4rem;
+    box-shadow: 0px 2px 8px 0px rgba(00, 00, 00, .1352);
+    @media screen and (max-width: 1200px) {
+      padding: 2rem;
+    }
+  }
+
+  // .sidebar__head
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .4rem;
+  }
+
+  // .sidebar__filter
+  &__filter {
+    padding-top: 3.6rem;
+    border-top: 1px solid #D6D6D6;
+    margin-bottom: 2.8rem;
+
+    &:first-of-type {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+}

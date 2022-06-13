@@ -1,0 +1,42 @@
+.bread-cramps {
+  display: flex;
+  align-items: center;
+  // .bread-cramps__item
+  &__item {
+    padding-right: 2.8rem;
+    margin-right: 1.2rem;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      height: .8rem;
+      width: 1.2rem;
+      background-image: url(../../img/icons/arrows-right.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &:last-of-type {
+      margin-right: 0;
+      padding-right: 0;
+      .bread-cramps__link {
+        color: #000;
+      }
+      .bread-cramps__link svg path {
+        stroke: #000;
+      }
+      &:after {
+        display: none;
+      }
+    }
+
+  }
+  // .bread-cramps__link
+  &__link {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
